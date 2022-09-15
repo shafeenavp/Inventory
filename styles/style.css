@@ -1,0 +1,139 @@
+form {
+  margin: 25px 50px;
+}
+
+label {
+  font-family: Garamond, serif;
+  font-size: 15px;
+  display: inline-block;
+  width: 150px;
+}
+
+.header {
+  background-color: #272742;
+  height: 60px;
+}
+
+.heading {
+  font-family: Garamond, serif;
+  padding-left: 25px;
+  padding-top: 15px;
+  color: white;
+}
+
+.btn-container {
+  padding-right: 25px;
+}
+
+.btn {
+  background-color: white;
+  padding: 3px 15px;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-label {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: block;
+  width: 200px;
+}
+
+.foot {
+  height: 2px;
+  background-color: #272742;
+}
+
+.delete-checkbox {
+  float: left;
+}
+
+.details {
+  float: left;
+  border: 1px solid black;
+  width: 253px;
+  height: 115px;
+  margin: 14px;
+}
+.details label {
+  word-wrap: break-word;
+  width: 200px;
+}
+
+.container {
+  overflow: hidden;
+  min-height: 420px;
+  padding-left: 10px;
+}
+
+.product-list {
+  margin: 10px;
+  text-align: center;
+}
+
+.dvdDiv, .bookDiv, .furnitureDiv, .data {
+  margin-left: 13px;
+  padding-left: 10px;
+}
+.dvdDiv input, .bookDiv input, .furnitureDiv input, .data input {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.data select {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 158px;
+}
+.data select option {
+  background: #fff;
+}
+
+.errormsg {
+  font-family: Garamond, serif;
+  font-size: 15px;
+  color: red;
+  padding-left: 20px;
+}
+
+#productType {
+  background-color: #D3D3D3;
+  padding: 3px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+input[type=checkbox] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+@media (min-width: 550px) {
+  .btn-container {
+    float: right;
+  }
+}
+@media (max-width: 549px) {
+  .btn {
+    margin-left: 0px;
+  }
+  .btn-container {
+    padding-right: 10px;
+  }
+  form {
+    margin: 25px 0px;
+  }
+}
+#skutaken {
+  float: right;
+  width: 100%;
+  height: 40px;
+}
+
+#skuNotValid {
+  padding-left: 0px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+@import './reuse.scss';
+form
+{
+    margin: 25px 50px;
+}
+
+label
+{
+    @include font;
+    font-size: 15px;
+    display: inline-block;
+    width: 150px;
+}
+
+.header
+{
+    background-color: $bgColor;
+    height:60px;
+}
+
+.heading
+{
+    @include font;
+    padding-left: 25px;
+    padding-top: 15px;
+    color:  white;
+}
+
+.btn-container
+{
+    padding-right: 25px;
+}
+
+.btn
+{
+    background-color: $boxColor;
+    padding: 3px 15px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-label
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: block;
+    width: 200px;
+}
+
+.foot
+{
+    height:2px;
+    background-color: $bgColor;
+}
+
+.delete-checkbox
+{
+    float: left;
+  
+}
+
+.details
+{
+    label
+    {   word-wrap: break-word;
+        width: 200px;
+    }
+    float: left;
+    border: 1px solid black;
+    width:253px;
+    height:115px;
+    margin: 14px;
+   
+}
+
+.container
+{
+    overflow: hidden;
+    min-height: 420px;
+    padding-left: 10px;
+}
+
+.product-list
+{
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.dvdDiv, .bookDiv, .furnitureDiv, .data
+{
+    @include divAlign;
+    input
+    {
+        @include inputStyle;
+    }
+}
+
+.data select
+{
+    option
+    {
+        background: #fff;
+    }
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width:158px;
+}
+
+.errormsg
+{
+    @include font;
+    font-size: 15px;
+    color:  $errorColor;
+    padding-left:20px;
+}
+
+
+#productType
+{
+    background-color: #D3D3D3;
+    padding: 3px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+input[type=checkbox]
+{
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+// Float to the right on screens that are equal to or greater than 600px wide
+@media (min-width: 550px)
+{
+    .btn-container
+    {
+        float: right;
+    }
+}
+
+@media (max-width: 549px)
+{
+    .btn
+    {
+        margin-left: 0px;
+    }
+    .btn-container
+    {
+        padding-right: 10px;
+    }
+    form
+    {
+        margin: 25px 0px;
+    }
+}
+
+#skutaken
+{
+    float: right;
+    width: 100%;
+    height : 40px;
+}
+
+#skuNotValid
+{
+    padding-left:0px;
+}

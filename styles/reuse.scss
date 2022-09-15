@@ -1,0 +1,21 @@
+$boxColor :white;
+$errorColor :red;
+$bgColor: #272742;
+
+@mixin font 
+{
+    font-family: Garamond, serif;
+}
+
+@mixin divAlign 
+{
+    margin-left: 13px;
+    padding-left: 10px;
+}
+
+@mixin inputStyle 
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width:150px;
+}
